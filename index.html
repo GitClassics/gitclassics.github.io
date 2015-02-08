@@ -3,30 +3,33 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <title>GitClassics by GitClassics</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <header>
-      <div class="container">
-        <h1>GitClassics</h1>
-        <h2>Collaborate to Edit, Translate, and Publish New Latin Texts</h2>
+        <header>
+          <h1>GitClassics</h1>
+          <h2>Collaborate to Edit, Translate, and Publish New Latin Texts</h2>
+        </header>
 
-        <section id="downloads">
-          <a href="https://github.com/GitClassics" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/GitClassics" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
-      </div>
-    </header>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a id="salve-welcome-to-gitclassics" class="anchor" href="#salve-welcome-to-gitclassics" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 <em>Salve</em>! Welcome to GitClassics!</h1>
 
@@ -36,11 +39,40 @@
 <h2>
 <a id="even-if-you-have-no-knowledge-of-latin-you-can-help-bring-these-forgotten-artifacts-back-to-life-with-a-pull-request" class="anchor" href="#even-if-you-have-no-knowledge-of-latin-you-can-help-bring-these-forgotten-artifacts-back-to-life-with-a-pull-request" aria-hidden="true"><span class="octicon octicon-link"></span></a>Even if you have no knowledge of Latin, you can help bring these forgotten artifacts back to life with a pull request!</h2>
 
-<h3>
-<a id="more-coming-soon" class="anchor" href="#more-coming-soon" aria-hidden="true"><span class="octicon octicon-link"></span></a>More coming soon!</h3>
-      </section>
-    </div>
+<h2>
+<a id="whats-this-all-about" class="anchor" href="#whats-this-all-about" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's this all about?</h2>
 
-    
+<p>On account of projects like Google Books and the Internet Archive, there are literally tens of thousands of new Latin texts available on the Internet. Many well-known texts from antiquity are available at <a href="http://www.perseus.tufts.edu">The Perseus Project</a>, and even some medieval and early modern texts are also available at <a href="http://www.thelatinlibrary.com">The Latin Library</a>, but there is still a enormous amount of Latin literature that is available only as scanned images, not as plaintext. To get an idea of the amount of books out there, take a look at the <a href="http://catalog.hathitrust.org/Search/Home?adv=1&amp;type%5B%5D=all&amp;lookfor%5B%5D=&amp;bool%5B%5D=AND&amp;type%5B%5D=author&amp;lookfor%5B%5D=&amp;bool%5B%5D=AND&amp;type%5B%5D=title&amp;lookfor%5B%5D=&amp;bool%5B%5D=AND&amp;type%5B%5D=subject&amp;lookfor%5B%5D=&amp;setft=true&amp;ft=ft&amp;yop=after&amp;fqrange-start-publishDateTrie-1=&amp;fqrange-end-publishDateTrie-1=&amp;fqor-publishDateTrie%5B%5D=&amp;fqor-language%5B%5D=Latin&amp;submit=Search">collection of Latin language texts available at HathiTrust</a>.</p>
+
+<p>GitClassics aims to make some of these obscure Latin texts more readily available by editing, translating, and publishing them on GitHub. While it would take years to accomplish this task alone, the community at GitHub should be able to complete these tasks pretty quickly.</p>
+
+<h2>
+<a id="cant-ocr-do-this-for-us" class="anchor" href="#cant-ocr-do-this-for-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Can't OCR do this for us?</h2>
+
+<p>Probably not as well as a bunch of human readers. And part of the fun is becoming more familiar with the vast literature of the Latin language by working closely with these texts.</p>
+
+<h2>
+<a id="sounds-neat-which-text-are-you-starting-with" class="anchor" href="#sounds-neat-which-text-are-you-starting-with" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sounds neat! Which text are you starting with?</h2>
+
+<p>We're starting GitClassics with an 1830 poem called <em>Pugna Porcorum</em> ("The Battle of the Pigs"). It's a poem several hundred lines long written in dactyltic hexameter, and every word begins with the letter 'p' -- including words in the footnotes. It's an absurd but stunningly virtuosic piece of literature.</p>
+
+<h2>
+<a id="i-dont-know-latin-can-i-still-help" class="anchor" href="#i-dont-know-latin-can-i-still-help" aria-hidden="true"><span class="octicon octicon-link"></span></a>I don't know Latin! Can I still help?</h2>
+
+<p>Sure! You can help create plaintext editions of these texts simply by transcribing what you read in a scanned image into a plaintext file. No knowledge of Latin required.</p>
+
+<h2>
+<a id="great-how-to-i-start" class="anchor" href="#great-how-to-i-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Great, how to I start!</h2>
+
+<p>Clone the PugnaPorcorum repository, transcribe some of the Latin from the PDF into one of the text files, and submit a pull request. Once we've finished transcribing the Latin, we can start working on an English translation. (Of course, people are welcome to work on translations into other languages, too!)</p>
+        </section>
+
+        <footer>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
   </body>
 </html>
